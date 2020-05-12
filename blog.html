@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: whitesmoke;
+            }
+        
+        .logo{
+            display: block;
+            float: left;
+            height: 120px;
+            width: auto;
+            top: 0;
+            left: 20px;
+            border-radius: 50%;
+            position: absolute;
+            padding: 20px 20px;
+                }
+
+            .column {
+            float: left;
+            top: 20px;
+            width: 33.33%;
+            padding: 5px;
+            margin-left: 50px;
+            position: relative;
+            }
+
+            img{
+                float: left;
+            }
+
+
+        /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
+            nav{
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        .nav-bar li{
+            float: left;
+            list-style: none;
+            margin-left: 80px;
+        }
+
+        .nav-bar, .nav-bar a{
+            text-decoration: none;
+            display:block;
+            padding: 25px 25px;
+            text-align: center;
+            margin:0;
+            font-family: 'Flamenco', cursive;
+            font-size: 16px;  
+            color: black;
+            justify-content: flex-end;
+            margin-left: auto;   
+
+        }  
+        
+        nav a:hover {
+            color:#eea34e;
+            }
+
+        div.text a{
+            text-decoration: none;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 680px;
+            left: 120px;
+            font-family: 'Flamenco', cursive;
+            font-size: 20px;
+            color:black;        
+        }
+
+        div.text a:hover, div.text-one a:hover{
+            color:#eea34e;
+        }
+
+        div.text-one a{
+            text-decoration: none;
+            position: absolute;
+            top: 680px;
+            left: 620px;
+            font-family: 'Flamenco', cursive;
+            font-size: 20px;
+            color:black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src = "images/logg.jpg" alt="logo" class ="logo" onclick="index.html" height="40" width="25">
+           </a> 
+           <div class = "nav-bar">
+                
+            <li><a href="index.html">HOME</a></li
+            ><li><a href="#">CAREER</a></li
+            ><li><a href="about.html">ABOUT</a></li
+            ><li><a href="blog.html">BLOG</a></li
+            ><li><a href="#">CONTACT</a></li
+            ><!--<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i> </a> -->
+        
+        </div>
+    </nav> <br><br><br><br>
+    
+        <div class="row">
+            
+            <div class="column">
+                <a href="#"><img src="images/abc.jpg" alt="img" height="450" width="330"></a>
+            </div>
+            <div class="text"><a href="#">Know about my journey</a></div>
+
+            <div class="column">
+                <a href="#"><img src="images/img.jpg" alt="img" height="450" width="330"></a>
+            </div>
+            <div class="text-one"><a href="#">A day in life</a></div>
+
+            <!-- <div class="column">
+                <img src="images/tele.jpg" alt="img" height="400" width="250">
+            </div> --> 
+            
+          </div>
+        
+        
+    
+</body>
+</html>
